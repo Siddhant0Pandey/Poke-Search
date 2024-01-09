@@ -1,0 +1,12 @@
+# PokemonList React App
+
+### Setup Instructions
+
+1.Clone the Repository
+2.Navigate to the Project Directory
+3.Install Dependencies
+4.Run the Application
+5.Explore the Application
+- View a list of Pokemon with names, images, and types.
+   - Use the search field to filter Pokemon by name.
+
