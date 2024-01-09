@@ -19,6 +19,7 @@ function PokemonList() {
 
         const data = await response.json();
         setPokeData(data.results);
+        // console.log(data.results)
         setLoading(false);
       } catch (error) {
         console.error(error);
@@ -96,6 +97,7 @@ function PokemonList() {
                 />
 
                 <span className="text-center bg-green-600 w-full first-letter:uppercase  font-mono text-yellow-100">
+                  {/* {console.log(pokemon)} */}
                   {pokemon.name}
                 </span>
                 <span className="text-center bg-orange-400 mt-2 w-full first-letter:uppercase  font-mono text-yellow-100">
