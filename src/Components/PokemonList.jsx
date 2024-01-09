@@ -64,7 +64,7 @@ function PokemonList() {
   }, [pokedata]);
 
   return (
-    <div className="bg-[#2afc98]  flex flex-col  justify-center pl-16 pr-16 pt-10 overflow-hidden pb-10">
+    <div className="bg-[#2afc98]  flex flex-col  justify-center md:pl-16 md:pr-16 md:pt-10 overflow-hidden md:pb-10 p-10 pt-7">
       <input
         type="text"
         placeholder="Search Pokemon"
@@ -80,7 +80,7 @@ function PokemonList() {
       ) : error ? (
         <p className="text-red-500 absolute top-[28%] left-[45%]">{error}</p>
       ) : (
-        <div className=" mt-5 grid grid-cols-3 gap-4">
+        <div className=" mt-2 grid grid-cols-2 gap-4 md:grid-cols-3 md:mt-5">
           {pokemonDetails
             .filter((pokemon) =>
               pokemon.name.toLowerCase().includes(searchQuery.toLowerCase())
